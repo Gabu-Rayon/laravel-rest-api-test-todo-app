@@ -18,4 +18,4 @@ use App\Http\Controllers\QuestionController;
 Route::get('/fetch',[QuestionController::class, 'fetchInsert']);
 
 // Show
-Route::post('/', [QuestionController::class, 'show']);
+Route::get('/', [QuestionController::class, 'show']);
