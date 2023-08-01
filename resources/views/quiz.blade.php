@@ -1,29 +1,12 @@
-<!doctype html>
-<html lang="en">
+@extends('layouts.app')
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Quiz Rest Api Demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-        
- <link href="https://cdn.datatables.net/1.13.5/css/dataTables.bootstrap5.min.css" rel="stylesheet">
-    <script defer src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script defer src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.min.js"></script>
-    <script defer src="https://cdn.datatables.net/1.13.5/js/dataTables.bootstrap5.min.js"></script>
-
-    <script defer src="assets/js/dataTables.js">
-
-
-
-
-</head>
-
-<body>
+@section('title','Quiz Rest Api Demo')
+  
+@section('content')
     <div class="container">
-        <div class="row">
-            <table class="table   table-striped-columns">
+        <div class="row m-20 p-10">
+            <table id="example" class="table table-striped" style="width:100%">
+                <h2 class="text-center mt-4 text-info">Quiz Question and answers</h2>
                 <thead>
                     <tr>
                         <th scope="col">Question</th>
@@ -45,10 +28,10 @@
             </table>
         </div>
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
+    @endsection
+@section('script')
+    <script>
+        
     </script>
-</body>
+@endsection
 
-</html>
