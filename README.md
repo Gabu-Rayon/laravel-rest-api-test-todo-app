@@ -1,4 +1,4 @@
-   # Laravel Quiz API Project
+Laravel Quiz API Project
 
 This is a Laravel project that fetches data from a Quiz API and displays it to the user. The application allows users to access quiz questions from an external API and view them on the web interface.
 
@@ -8,43 +8,44 @@ Before you run the application, make sure you have the following installed on yo
 
     - PHP (>= 7.3)
     - Composer
-    - A web server (e.g., Apache or Nginx) to serve the application
+    - A web server (e.g., Apache or Nginx) to serve the 
+    -Xampp Apache Server locally
 
 ## Getting Started
 
    1. Clone the repository to your local machine:
 
 ```
-     git clone 
-    cd aravel-rest-api-test-todo-app
+      https://github.com/Gabu-Rayon/laravel-rest-api-test-todo-app.git
+    
 ```
+ 2. Clone the repository to your local machine:
 
-2. Install the required dependencies using Composer:
+         cd laravel-rest-api-test-todo-app
 
-```
- composer install
-```
+    
 
-3. Create a `.env` file by copying `.env.example`:
+3. Create your  database  
 
-```
-      cp .env.example .env
-```
+                 CREATE DATABASE my-dabase;
+4.Go to the `.env` file by config your database :
+        
+5. Run migration
 
-4. Generate the application key:
+           php artisan migrate
 
-```
-php artisan key:generate
-```
 
-5. Update the `APP_URL` and database configuration in the `.env` file according to your local setup.
+4.Create account in  https://quizapi.io/ 
 
-6. Set up the database:
+5. Generate the api key
+   
 
-```
-php artisan migrate
-```
+5. Go App->Http->Controlllers->QuController.php.change the  apikey.
 
+
+6. serve your project
+
+                           php artisan seeve
 ## Fetching Data from Quiz API
 
 To fetch data from the Quiz API, we have implemented a `fetchInsert()` method inside the `QuestionController`. This method makes a request to the Quiz API using Laravel's HTTP client and saves the retrieved questions into the database.
@@ -52,7 +53,7 @@ To fetch data from the Quiz API, we have implemented a `fetchInsert()` method in
 To use this feature, access the `/fetch` endpoint in your browser:
 
 ```
-         http://your-app-url/fetch-
+       http://127.0.0.1:8000/fetch
 ```
 
 ## Viewing Quiz Questions
@@ -60,7 +61,8 @@ To use this feature, access the `/fetch` endpoint in your browser:
 The quiz questions fetched from the API are now available in the database. You can view them by accessing the homepage of the application:
 
 ```
-       http://your-app-url
+      http://127.0.0.1:8000/
+
 ```
 
 On the homepage, the quiz questions will be displayed for the users to interact with.
@@ -75,3 +77,7 @@ If you would like to contribute to this project or report any issues, please fee
 We would like to thank the creators of the Quiz API for providing the data for this project.
 
 ---
+
+
+
+##Happy Coding
