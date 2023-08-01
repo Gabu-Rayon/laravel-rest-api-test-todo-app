@@ -32,6 +32,6 @@ class QuestionController extends Controller
     {
         $data['questions']= Question::all();
 
-        return view('welcome', $data);
+        return view('quiz', $data);
     }
 }

@@ -14,11 +14,8 @@ use App\Http\Controllers\QuestionController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 // Fetch
 Route::get('/fetch',[QuestionController::class, 'fetchInsert']);
 
 // Show
-Route::post('/fetch', [QuestionController::class, 'show']);
+Route::post('/', [QuestionController::class, 'show']);
