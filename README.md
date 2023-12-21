@@ -6,7 +6,7 @@ This is a Laravel project that fetches data from a Quiz API and displays it to t
 
 Before you run the application, make sure you have the following installed on your system:
 
-    - PHP (>= 7.3)
+    - PHP (>= 7)
     - Composer
     - A web server (e.g., Apache or Nginx) to serve the 
     -Xampp Apache Server locally
